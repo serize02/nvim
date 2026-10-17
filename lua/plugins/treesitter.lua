@@ -19,6 +19,8 @@ return {
         "json",
         "yaml",
         "toml",
+        "kotlin",
+        "java"
       })
 
       vim.api.nvim_create_autocmd("FileType", {
@@ -33,6 +35,8 @@ return {
           "json",
           "yaml",
           "toml",
+          "kotlin",
+          "java"
         },
 
         callback = function()

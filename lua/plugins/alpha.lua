@@ -1,5 +1,6 @@
 return {
   "goolord/alpha-nvim",
+  enable = false,
   event = "VimEnter",
 
   config = function()
