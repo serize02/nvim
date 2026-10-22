@@ -1,16 +1,19 @@
 return {
-  {
-    "projekt0n/github-nvim-theme",
-    name = "github-theme",
-    config = function()
-      require("github-theme").setup({
-        -- ...
-      })
-
-      vim.cmd("colorscheme github_dark_default") -- or github_dark_default
-    end,
-  },
+  -- nothing here, default is great 
 }
+-- -- return {
+--   {
+--     "projekt0n/github-nvim-theme",
+--     name = "github-theme",
+--     config = function()
+--       require("github-theme").setup({
+--         -- ...
+--       })
+--
+--       vim.cmd("colorscheme github_dark_default") -- or github_dark_default
+--     end,
+--   },
+-- }
 -- return {
 --   {
 --     "catppuccin/nvim", 
@@ -89,7 +92,33 @@ return {
 --       })
 --
 --       -- setup must be called before loading
---       vim.cmd.colorscheme "catppuccin-frappe"
+--       vim.cmd.colorscheme "catppuccin-mocha"
 --     end,
 --   }
+-- }
+-- lua/plugins/rose-pine.lua
+-- return {
+--     "rose-pine/neovim",
+--     name = "rose-pine",
+--     priority = 1000,
+--     config = function()
+--         require("rose-pine").setup({
+--             styles = {
+--                 transparency = true,
+--                 italic = false,
+--             },
+--             highlight_groups = {
+--                 Normal = { fg = "#FFFFFF" },
+--                 Comment = { fg = "#A5A0BD" },
+--             },
+--
+--         })
+--
+--         vim.cmd.colorscheme("rose-pine-moon")
+--                 -- vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
+--         -- vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
+--         -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+--         -- vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE" })
+--         -- vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "NONE" })
+--     end,
 -- }

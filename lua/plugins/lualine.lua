@@ -5,7 +5,10 @@ return {
   },
   config = function()
     require("lualine").setup({
-      options = { icons_enabled = true,},
+      options = { 
+        icons_enabled = true,
+        theme = "onedark"
+      },
       sections = {
         lualine_a = { "mode" },
         lualine_b = { "branch", "diff", "diagnostics" },
@@ -32,12 +35,12 @@ return {
         lualine_y = {},
         lualine_z = {},
       },
-      tabline = {
-        lualine_a = {{ "buffers", show_filename_only = true } },
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = { "tabs" },
-      },
+      -- tabline = {
+      --   lualine_a = {{ "buffers", show_filename_only = true } },
+      --   lualine_x = {},
+      --   lualine_y = {},
+      --   lualine_z = { "tabs" },
+      -- },
       extensions = {},
     })
   end,
